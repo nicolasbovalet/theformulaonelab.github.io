@@ -136,21 +136,28 @@ header{
     }
 
 }
+#footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+footer {
+    nav {
+        width: 100%;
+        text-align: center;
+        padding: 2px 0px;
+    }
 
+    div {
+        padding-top: 20px;
+    }
+}
 .logo {
     max-width: 8%;
     max-height: 100%;
     display: none;
     padding-right: 25px;
 }
-
-
-#footer {
-    width: 100%;
-    left: 0;
-    bottom: 0;
-}
-
 .notMobile,
 .logo,
 h2 {
@@ -194,19 +201,6 @@ h2 {
         font-size: 1.7em;
     }
 }
-
-footer {
-    nav {
-        width: 100%;
-        text-align: center;
-        padding: 2px 0px;
-    }
-
-    div {
-        padding-top: 20px;
-    }
-}
-
 section {
     margin-inline: 10px;
     margin-block: 1.5em;
@@ -415,7 +409,7 @@ tr:nth-of-type(even) {
         font-weight: normal;
     }
 
-    #topBar a:hover {
+    #topBar li a:hover {
         color: var(--hover);
         transform: translateY(2px);
     }
@@ -423,6 +417,7 @@ tr:nth-of-type(even) {
     #bottomBar a:hover {
         color: var(--hover);
         transform: translateY(2px);
+        
     }
 
     .news:hover img {
@@ -436,9 +431,12 @@ tr:nth-of-type(even) {
     .news:hover {
         box-shadow: 4px 4px 0px 0px var(--accent);
     }
+    #topBar  p:hover{
+           color: var(--accent);
 
+        
+    }
 }
-
 
 @media all and (min-width: 900px) {
 
