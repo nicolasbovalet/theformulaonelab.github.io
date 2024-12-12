@@ -200,6 +200,13 @@ h2 {
         color: var(--accent);
         font-size: 1.7em;
     }
+    a{
+        text-decoration: underline;
+        color: var(--text)
+    }
+    a:hover{
+        color: var(--hover);
+    }
 }
 section {
     margin-inline: 10px;
@@ -227,6 +234,14 @@ table {
     position: relative;
     margin: auto;
     margin-bottom: 50px;
+}
+#title{
+    text-align: center;
+    font-size: 2em;
+    padding: 2vi;
+}
+#timings-table{
+    width: 90%;
 }
 
 th,
@@ -352,6 +367,9 @@ tr:nth-of-type(even) {
 #topBar h1,h2{
     padding: 15px;
 }
+#timings-table th:nth-of-type(2), th:nth-of-type(4), th:nth-of-type(5), td:nth-of-type(2), td:nth-of-type(4), td:nth-of-type(5){
+    display: none;
+}
 /*Advanced CSS*/
 @container card (min-width: 700px) {
     .card img {
@@ -375,6 +393,9 @@ tr:nth-of-type(even) {
 }
 
 @media all and (min-width: 768px) {
+    #timings-table th:nth-of-type(2), th:nth-of-type(4), th:nth-of-type(5), td:nth-of-type(2), td:nth-of-type(4), td:nth-of-type(5){
+        display: table-cell;
+    }
     .notMobile {
         display: inline;
     }
