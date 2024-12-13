@@ -478,19 +478,31 @@ td:nth-of-type(5) {
   }
 }
 #form-grid {
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 100%; /* Ensures the parent div takes full viewport height */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 0em;
+    box-sizing: border-box;
+    margin: 0;
+    
   }
   
   #form {
-    text-align: center;
-    width: 100%;
+    text-align: center; 
+    width: 100%; 
     max-width: 600px;
-    min-width: 320px;
-    padding: 1em;
-    box-sizing: border-box;
+    padding: 0em; 
+    
+  }
+  .fieldset {
+    margin: 0em 0; 
+    padding: 1em; 
+    border: 1px solid var(--dark);
+    border-radius: 6px;
+    width: 100%; 
+    max-width: 500px; 
+    background-color: var(--background); 
   }
   
   #form legend {
@@ -498,7 +510,7 @@ td:nth-of-type(5) {
   }
   
   #form .fieldset {
-    margin: 2em 2em;
+    margin: 0em 0em;
     padding: 1em 2em;
     border: solid 1px var(--dark);
     border-radius: 6px;
@@ -506,7 +518,7 @@ td:nth-of-type(5) {
   }
   
   #form .field {
-    margin: auto;
+    margin: 0;
     padding: 0.5em 1em;
     margin-top: 1em;
     border: solid 1px var(--dark);
@@ -574,5 +586,5 @@ td:nth-of-type(5) {
     background-color: var(--accent);
     color: var(--text);
     font-size: 0.8em;
-    margin-top: 2em;
+    margin-top: 1em;
   }
