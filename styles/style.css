@@ -345,6 +345,9 @@ img {
   font-size: 2em;
   color: var(--accent);
 }
+.hours{
+  width: 80%;
+}
 
 tr:nth-of-type(even) {
   background-color: var(--background);
@@ -354,15 +357,16 @@ h2 {
   padding: 15px;
 }
 #timings-table th:nth-of-type(2),
-th:nth-of-type(4),
-th:nth-of-type(5),
-td:nth-of-type(2),
-td:nth-of-type(4),
-td:nth-of-type(5) {
-  display: none;
-}
+  #timings-table th:nth-of-type(4),
+  #timings-table th:nth-of-type(5),
+  #timings-table td:nth-of-type(2),
+  #timings-table td:nth-of-type(4),
+  #timings-table td:nth-of-type(5) {
+    display: none;
+  }
 /*Advanced CSS*/
 @container card (min-width: 700px) {
+  
   .card img {
     inline-size: calc(40cqi - 40px);
     /*Advanced CSS*/
@@ -384,12 +388,15 @@ td:nth-of-type(5) {
 }
 
 @media all and (min-width: 768px) {
+  .hours{
+    width: 50%;
+  }
   #timings-table th:nth-of-type(2),
-  th:nth-of-type(4),
-  th:nth-of-type(5),
-  td:nth-of-type(2),
-  td:nth-of-type(4),
-  td:nth-of-type(5) {
+  #timings-table th:nth-of-type(4),
+  #timings-table th:nth-of-type(5),
+  #timings-table td:nth-of-type(2),
+  #timings-table td:nth-of-type(4),
+  #timings-table td:nth-of-type(5) {
     display: table-cell;
   }
   .notMobile {
