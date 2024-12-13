@@ -477,36 +477,102 @@ td:nth-of-type(5) {
     float: right;
   }
 }
-#form {
-  fieldset {
+#form-grid {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100%; /* Ensures the parent div takes full viewport height */
+  }
+  
+  #form {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    min-width: 320px;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  
+  #form legend {
+    font-size: 1.7em;
+  }
+  
+  #form .fieldset {
     margin: 2em 2em;
     padding: 1em 2em;
     border: solid 1px var(--dark);
     border-radius: 6px;
+    width: 100%;
+  }
+  
+  #form .field {
+    margin: auto;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    border: solid 1px var(--dark);
+    border-radius: 6px;
     min-width: 200px;
   }
-  legend {
+  
+  #form .field label {
+    display: inline-block;
+    padding-top: 0.5em;
+    margin-top: 0;
+    margin-right: 0.5em;
+  }
+  
+  #form legend {
     font-size: 1.25em;
     padding: 0 0.25em;
     color: var(--accent);
   }
-  label{
+  
+  #form label {
     display: block;
     margin-top: 1em;
   }
-  input{
-    padding: .5em;
+  
+  #form input {
+    padding: 0.5em;
     border: solid 1px var(--accent);
     background-color: var(--background);
     color: var(--text);
   }
-  input[type="email"], input[type="text"]{
-    width: 15em;
+  
+  #form input[type="email"],
+  #form input[type="text"] {
+    width: 21em;
   }
-  textarea{
+  
+  #form textarea {
     min-height: 8em;
-    min-width: 25%;
-    padding: .5em;
+    min-width: 40%;
+    padding: 0.5em;
     border: solid 1px var(--accent);
   }
-}
+  
+  #form .field legend {
+    margin-bottom: 0;
+  }
+  
+  #form input[type="checkbox"] + label,
+  #form input[type="radio"] + label {
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  
+  #form input[type="radio"] {
+    margin-left: 1.5em;
+    margin-right: 0;
+  }
+  
+  #form input[type="submit"],
+  #form [type="reset"] {
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    background-color: var(--accent);
+    color: var(--text);
+    font-size: 0.8em;
+    margin-top: 2em;
+  }

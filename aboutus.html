@@ -78,9 +78,9 @@
                 <td>Closed</td>
             </tr>
         </table>
-
+        <div id="form-grid">
         <form action="#" method="get" id="form">
-            <fieldset>
+            <fieldset class="fieldset">
                 <legend>Contact Us</legend>
             <div>
                 <label for="first-name">First Name</label>
@@ -94,7 +94,7 @@
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" placeholder="maxverstappen@example.com" required>
             </div>
-            <fieldset>
+            <fieldset class="field">
                 <legend>Reason For Contact</legend>
                 <div>
                     <input type="radio" name="issue" id="account" value="1">
@@ -105,15 +105,15 @@
                     <label for="payment">Checkout Error</label>
                 </div>
                 <div>
-                    <input type="radio" name="issue" id="feedback">
-                    <label for="feedback">Provide Feedback</label>
+                    <input type="radio" name="issue" id="provide">
+                    <label for="provide">Provide Feedback</label>
                 </div>
                 <div>
                     <input type="radio" name="issue" id="other" value="2">
                     <label for="other">Other</label>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="field">
                 <legend>What are you looking forward to with our service</legend>
                 <div>
                     <input type="checkbox" name="service" id="news">
@@ -148,6 +148,7 @@
             </div>
         </fieldset>
         </form>
+    </div>
     </main>
 
     <div id="bottomBar">
