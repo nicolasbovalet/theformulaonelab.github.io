@@ -502,7 +502,7 @@ td:nth-of-type(5) {
     border-radius: 6px;
     width: 100%; 
     max-width: 500px; 
-    background-color: var(--background); 
+
   }
   
   #form legend {
