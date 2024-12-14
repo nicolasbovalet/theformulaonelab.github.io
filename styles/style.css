@@ -395,23 +395,18 @@ h2 {
     video{
       grid-column-start: 2 !important;
       grid-column-end: 2 !important;
+      justify-self: start !important;
+      padding-left: 10px;
     }
     div{
-      justify-self: center;
+      justify-self: end !important;
       align-self: center;
       h6{
         color: var(--dark);
       }
     }
   }
-  .team {
-    grid-template-columns: repeat(8, 1fr) !important;
-    margin: 2em;
-    p {
-      width: 75%;
-      font-size: 1.1em !important;
-    } 
-  }
+  
   .hours {
     width: 50%;
   }
@@ -497,6 +492,18 @@ h2 {
 
 /*Float Images*/
 @media all and (min-width: 1000px) {
+  .team {
+    grid-template-columns: repeat(4, 1fr) !important;
+    margin: 2em;
+    p {
+      width: 75%;
+      font-size: 1.1em !important;
+    } 
+    img{
+      width: 50%;
+      height: auto;
+    }
+  }
   .homeImages {
     float: left;
     padding: 20px;
@@ -603,13 +610,17 @@ h2 {
   width: 100%;
   gap: 25px;
   margin: 2em;
+  h2{
+    padding-top: 10px;
+    width: 50%;
+  }
   p {
-    width: 75%;
+    width: 50%;
     font-size: .9em;
   }
   .cuties {
     justify-self: end;
-    width: 100%;
+    width: 50%;
     height: auto;
   }
 }
@@ -621,6 +632,8 @@ h2 {
   video{
     grid-column-start: 1;
     grid-column-end: 1;
+    justify-self: center ;
+    align-self: center ;
   }
   div{
     justify-self: center;
