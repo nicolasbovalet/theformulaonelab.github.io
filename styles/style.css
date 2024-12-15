@@ -491,6 +491,9 @@ h2 {
   h2 {
     padding: 0;
   }
+  .not-Mobile{
+    display: inline-block !important;
+  }
 }
 
 @media all and (min-width: 900px) {
@@ -528,12 +531,11 @@ h2 {
   }
 }
 #form-grid {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 0em;
-  box-sizing: border-box;
+  padding: 0;
   margin: 0;
 }
 #form {
@@ -542,6 +544,7 @@ h2 {
   width: 100%;
   max-width: 600px;
   padding: 0em;
+  padding-right: 0;
   textarea {
     background-color: var(--dark);
   }
@@ -625,17 +628,24 @@ h2 {
   h2{
     padding-top: 10px;
     width: 50%;
+    display: inline-block;
+    font-size: 1.3em;
   }
   p {
-    padding-top: 1em;
+    padding-top: .1em;
     width: 50%;
     font-size: .9em;
+    
   }
   .cuties {
     justify-self: end;
     width: 50%;
     height: auto;
   }
+  .not-Mobile{
+    display: none;
+  }
+  
 }
 .testimonial{
   display: grid;
