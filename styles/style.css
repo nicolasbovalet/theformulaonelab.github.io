@@ -302,6 +302,7 @@ caption {
   align-self: center;
   transition: all 0s;
   box-shadow: 0px 0px 0 0 var(--accent);
+  min-height: 450px;
 }
 
 .news img,
@@ -332,7 +333,9 @@ img {
   inline-size: 100%;
   block-size: 100%;
 }
-
+.table{
+  overflow-x: auto;
+}
 .sub th:nth-of-type(1) {
   border: none;
   background-color: transparent;
@@ -809,8 +812,8 @@ h2 {
   ul li::before {
     content: "";
     display: inline-block;
-    width: 20px;
-    height: 20px; 
+    inline-size: 20px;
+    block-size: 20px; 
     background-image: url(../images/whiteCar.png);
     background-size: cover; 
     margin-right: 10px; 
